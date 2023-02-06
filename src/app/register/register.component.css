@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Kenia&family=Patua+One&family=Poppins:wght@400;500;600&family=Roboto&family=Rubik+80s+Fade&display=swap');
+
+.main{
+    background-color: #eee;
+    /* background-color: rgb(5, 5, 5); */
+    height: 100vh;
+}
+.parent{
+  max-width: 360px;
+  width: 100%;
+  margin: auto;
+  padding: 8% 0 0;
+}
+
+.signup{
+    max-width: 360px;
+    margin:0 auto 100px;
+    padding: 45px;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
+}
+
+.signup h1{
+    font-family: 'Kenia', cursive; 
+}
+
+.signup input{
+    width: 100%;
+    padding: 15px;
+    font-family: 'Kenia', cursive;
+    background: #f2f2f2;
+    border: 0;
+    outline: 0;
+    margin: 0 0 15px;
+    font-size: 14px;
+    border-radius: 25px;
+
+}
+
+.signup .checkbox{
+    font-size: 13px;
+}
+
+.signup .checkbox input{
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+    margin:  0;
+    accent-color: #ec0000;
+}
+
+.signup .checkbox a{
+    text-decoration: none;
+}
+
+.signup .checked{
+    color: #898888;
+
+}
+
+.signup .checked a{
+    color: #ec0000;
+}
+
+.signup button{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    background: #ec0000;
+    border: none;
+    outline: 0;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 5px;
+    border-radius: 25px;
+
+}
+
+.signup button:hover{
+    background: #dc0d0d;
+ 
+}
+
+.signup .message{
+    margin: 15px 0 0;
+    color: #898888;
+    font-size: 13px;
+}
+
+.signup .message a{
+    text-decoration: none;
+    color: #ec0000;
+}
+
+
+@media  screen and (max-width:400px) {
+    .checkbox label{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Kenia&family=Patua+One&family=Poppins:wght@400;500;600&family=Roboto&family=Rubik+80s+Fade&display=swap');
+
+
+.main{
+    background-color: #eee;
+    height: 100vh;
+}
+
+.parent{
+    max-width: 360px;
+    width: 100%;
+    padding: 8% 0 0;
+    margin: auto;
+
+}
+
+.login{
+    background-color: #fff;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px  rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
+}
+
+
+.login h1{
+    font-family: 'Kenia', cursive;
+}
+
+.login input{
+    font-family: 'Kenia', cursive;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 25px;
+}
+
+.login button{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #ec0000;
+  color: #fff; 
+  width: 100%;
+  border: none;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 25px;
+}
+
+.login button:hover{
+    background: #dc0d0d;
+}
+
+
+
+.login .message{
+    margin: 15px 0 0;
+    color: #898888;
+    font-size: 13px;
+}
+
+.login .message a{
+    color: #ec0000;
+    text-decoration: none;
+}
+
+@media screen and (max-width:300px) {
+
+    .login .message{
+        font-size: 12px;
+    }
+    
+}
+
+

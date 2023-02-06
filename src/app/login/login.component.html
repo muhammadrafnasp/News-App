@@ -1,0 +1,16 @@
+<div class="main">
+<div class="parent">
+ <div class="login">
+ <h1>Login</h1>
+ <form [formGroup]="loginForm">
+        <input formControlName="email" type="email" name="email" id="email" placeholder="Email address">
+        <div *ngIf="this.loginForm.get('email')?.errors && this.loginForm.get('email')?.touched" style="color: red; font-family: 'Kenia', cursive;">Invalid Email</div>
+
+     <input formControlName="password" type="password" name="password" id="password" placeholder="Password">
+     <div *ngIf="this.loginForm.get('password')?.errors && this.loginForm.get('password')?.touched" style="color: red; font-family: 'Kenia', cursive;">Invalid Password</div>
+     <button (click)="login()">login</button>
+     <p class="message">Not registered?<a routerLink="register">Create an account</a></p>
+ </form>
+ </div>
+ </div>
+</div>

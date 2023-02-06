@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+
+<!-- news container -->
+
+<div class="news-container">
+    <!-- box1 -->
+    <div class="news-box" *ngFor="let health of healthNews | filter : searchTerm : 'title'">
+        <!-- img -->
+        <div class="news-img">
+            <img [src]="health.urlToImage" alt="">
+        </div>
+        <!-- text -->
+        <div class="news-text">
+            <div class="author">
+                <div class="author1">Author: {{health.author}}</div>
+                <div class="author1">{{health.publishedAt}}</div>
+            </div>
+            <a class="news-title" routerLink="/health">{{health.title}}</a>
+            <p>{{health.description}}</p>
+            <div class="book-mark">
+                <a href="{{health.url}}">Read More...</a>
+                <a (click)="addtobookmarks(health)"><i class="fa-solid fa-bookmark"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<app-imageslide></app-imageslide>
+<app-footer></app-footer>

@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+
+<!-- news container -->
+
+<div class="news-container">
+    <!-- box1 -->
+    <div class="news-box" *ngFor="let busi of businessNews | filter : serchTerm:'title'">
+        <!-- img -->
+        <div class="news-img">
+            <img [src]="busi.urlToImage" alt="">
+        </div>
+        <!-- text -->
+        <div class="news-text">
+            <div class="author">
+                <div class="author1">Author: {{busi.author}}</div>
+                <div class="author1">{{busi.publishedAt}}</div>
+            </div>
+            <a class="news-title" routerLink="/home">{{busi.title}}</a>
+            <p>{{busi.description}}</p>
+            <div class="book-mark">
+                <a href="{{busi.url}}">Read More...</a>
+                <a (click)="addtobookmarks(busi)"><i class="fa-solid fa-bookmark"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<app-imageslide></app-imageslide>
+<app-footer></app-footer>

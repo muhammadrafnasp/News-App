@@ -1,0 +1,37 @@
+<app-header></app-header>
+
+<!-- <pre>
+    {{searchTerm | json}}
+</pre> -->
+
+
+<!-- news container -->
+
+<div class="news-container">
+    <!-- box1 -->
+    <div class="news-box" *ngFor="let general of generalNews | filter: searchTerm: 'category'">
+        <!-- img -->
+        <div class="news-img">
+            <img [src]="general.urlToImage" alt="">
+        </div>
+        <!-- text -->
+        <div class="news-text">
+            <div class="author">
+                <div class="author1">Author: {{general.author}}</div>
+                <div class="author1">{{general.publishedAt}}</div>
+            </div>
+            <a class="news-title" routerLink="/home">{{general.title}}</a>
+            <p>{{general.description}}</p>
+            <div class="book-mark">
+                <a href="{{general.url}}">Read More...</a>
+                <a (click)="addtobookmarks(general)"><i class="fa-solid fa-bookmark"></i></a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>
+<app-imageslide></app-imageslide>
+<app-footer></app-footer>

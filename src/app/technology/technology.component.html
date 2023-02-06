@@ -1,0 +1,33 @@
+<app-header></app-header>
+
+
+<!-- news container -->
+
+<div class="news-container">
+    <!-- box1 -->
+    <div class="news-box" *ngFor="let tech of techNews | filter : searchTerm : 'title'">
+    <!-- img -->
+    <div class="news-img">
+        <img [src]="tech.urlToImage" alt="">
+    </div>
+    <!-- text -->
+    <div class="news-text">
+    <div class="author">
+        <div class="author1">Author: {{tech.author}}</div>
+        <div class="author1">{{tech.publishedAt}}</div>
+    </div>
+        <a class="news-title" routerLink="/technology">{{tech.title}}</a>
+        <p>{{tech.description}}</p>
+        <div class="book-mark">
+            <a href="{{tech.url}}">Read More...</a>
+            <a (click)="addtobookmarks(tech)"><i class="fa-solid fa-bookmark"></i></a>    
+        </div>
+    </div>
+
+
+    
+</div>   
+
+</div>
+<app-imageslide></app-imageslide>
+<app-footer></app-footer>

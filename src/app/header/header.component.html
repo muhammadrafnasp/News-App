@@ -1,0 +1,60 @@
+<header>
+    <div class="content">
+        <div class="header">
+            <div>
+                <i style="color:#a3a3a3 ;" class="fa-regular fa-calendar-check"></i><span style="color: #a3a3a3;">
+                    {{sdate |
+                    date}} |</span>
+                <a routerLink="/home">About</a>
+                <a routerLink="/home">Write for Us</a>
+                <a routerLink="/home">Advertise</a>
+                <a routerLink="/home">Contact</a>
+                <a routerLink="/bookmark">Bookmarks</a>
+            </div>
+            <div>
+                <a routerLink="/bookmark"><i class="fa-solid fa-bookmark"></i></a>
+                <a routerLink="/home"><i class="fa-brands fa-facebook-f"></i></a>
+                <a routerLink="/home"><i class="fa-brands fa-twitter"></i></a>
+                <a routerLink="/home"><i class="fa-brands fa-instagram"></i></a>
+                <a routerLink="/home"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a routerLink="/home"><i class="fa-brands fa-youtube"></i></a>
+                
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="logo" >
+                <a routerLink="/home"> <img
+                        src="https://demo.themewinter.com/wp/news247/wp-content/uploads/2017/07/logo.png" alt=""></a>
+                <i (click)="logout()" class="fa-sharp fa-solid fa-circle-user fa-2x"></i>
+            </div>
+            <p class="logout">{{user}}</p>
+            <div class="hrline">
+            <h5 *ngFor="let general of generalNews">{{title2}}</h5>
+            </div>
+        </div>
+        <div class="header1">
+            <div class="header2">
+                   
+                    <a  routerLink="/home">Home</a>
+                    <a  routerLink="/business">Business</a>
+            
+                    <a  routerLink="/sports">Sports</a>
+                            
+                    <a  routerLink="/health">Health</a>
+                
+                    <a  routerLink="/science">Science</a>
+                
+                    <a  routerLink="/technology">Technology</a>
+                
+                    <a  routerLink="/entertainment">Entertainment</a>
+                
+                <div class="search">
+                    <i class="fa-sharp fa-solid fa-search"></i>
+                    <input (keyup)="search($event)" type="text" placeholder="search news...">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
